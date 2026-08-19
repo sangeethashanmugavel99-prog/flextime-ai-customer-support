@@ -1,0 +1,262 @@
+# FlexTime AI Customer Support — Test Cases
+
+## Test Case 01 — Duplicate Billing Charge
+
+Customer Input:
+"I was charged twice for my FlexTime subscription this month."
+
+Expected Intent:
+Billing
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 02 — Refund Request
+
+Customer Input:
+"I want a refund for my FlexTime subscription payment."
+
+Expected Intent:
+Billing
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+YES if human approval is required
+
+---
+
+## Test Case 03 — Billing Price Question
+
+Customer Input:
+"Why did my subscription charge increase this month?"
+
+Expected Intent:
+Billing
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 04 — Dashboard Error
+
+Customer Input:
+"The FlexTime dashboard keeps showing an error and I cannot open my reports."
+
+Expected Intent:
+Technical Support
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 05 — Application Crash
+
+Customer Input:
+"The FlexTime application keeps crashing whenever I try to open it."
+
+Expected Intent:
+Technical Support
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 06 — Export Problem
+
+Customer Input:
+"I cannot export my report from FlexTime."
+
+Expected Intent:
+Technical Support
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 07 — Password Change
+
+Customer Input:
+"I forgot my password and need to change it."
+
+Expected Intent:
+Account Management
+
+Expected Urgency:
+Medium
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 08 — Email Update
+
+Customer Input:
+"How can I change the email address associated with my account?"
+
+Expected Intent:
+Account Management
+
+Expected Urgency:
+Low
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 09 — Account Settings
+
+Customer Input:
+"I want to update my account settings."
+
+Expected Intent:
+Account Management
+
+Expected Urgency:
+Low
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 10 — Product Features
+
+Customer Input:
+"What features are included in the FlexTime Pro plan?"
+
+Expected Intent:
+General Inquiry
+
+Expected Urgency:
+Low
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 11 — Free Trial
+
+Customer Input:
+"Does FlexTime offer a free trial?"
+
+Expected Intent:
+General Inquiry
+
+Expected Urgency:
+Low
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 12 — Product Information
+
+Customer Input:
+"How does FlexTime work for a small business?"
+
+Expected Intent:
+General Inquiry
+
+Expected Urgency:
+Low
+
+Expected Escalation:
+NO
+
+---
+
+## Test Case 13 — Unauthorized Account Access
+
+Customer Input:
+"Someone logged into my FlexTime account and I don't recognize the activity."
+
+Expected Intent:
+Urgent Escalation
+
+Expected Urgency:
+Critical
+
+Expected Escalation:
+YES
+
+Expected Team:
+Security
+
+---
+
+## Test Case 14 — Account Compromise
+
+Customer Input:
+"I think someone has compromised my FlexTime account and changed my settings."
+
+Expected Intent:
+Urgent Escalation
+
+Expected Urgency:
+Critical
+
+Expected Escalation:
+YES
+
+Expected Team:
+Security
+
+---
+
+## Test Case 15 — Unauthorized Payment
+
+Customer Input:
+"There is a payment on my FlexTime account that I did not authorize."
+
+Expected Intent:
+Urgent Escalation
+
+Expected Urgency:
+High or Critical
+
+Expected Escalation:
+YES
+
+Expected Team:
+Billing / Security
+
+---
+
+# Test Summary
+
+Total Test Cases: 15
+
+Billing: 3
+Technical Support: 3
+Account Management: 3
+General Inquiry: 3
+Urgent Escalation: 3
+
+The test suite covers intent classification, urgency detection, escalation handling, and human-review requirements.
