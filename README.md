@@ -171,3 +171,9 @@ Future versions could integrate:
 * Production evaluation metrics
 * Conversation analytics
 
+## Loom Walkthrough
+
+A recorded walkthrough demonstrating the FlexTime AI Customer Support Prompt Chain, including intent classification, CARE response generation, self-verification, escalation handling, CRM summarization, and testing.
+
+Loom Video:
+https://www.loom.com/share/7ae45131ae9944ddbbd39263e804ce80
