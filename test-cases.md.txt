@@ -260,3 +260,80 @@ General Inquiry: 3
 Urgent Escalation: 3
 
 The test suite covers intent classification, urgency detection, escalation handling, and human-review requirements.
+# Actual Test Results
+
+## Test Result Summary
+
+| Test Case | Expected Intent    | Actual Result      | Status |
+| --------- | ------------------ | ------------------ | ------ |
+| TC01      | Billing            | Billing            | PASS   |
+| TC02      | Billing            | Billing            | PASS   |
+| TC03      | Billing            | Billing            | PASS   |
+| TC04      | Technical Support  | Technical Support  | PASS   |
+| TC05      | Technical Support  | Technical Support  | PASS   |
+| TC06      | Technical Support  | Technical Support  | PASS   |
+| TC07      | Account Management | Account Management | PASS   |
+| TC08      | Account Management | Account Management | PASS   |
+| TC09      | Account Management | Account Management | PASS   |
+| TC10      | General Inquiry    | General Inquiry    | PASS   |
+| TC11      | General Inquiry    | General Inquiry    | PASS   |
+| TC12      | General Inquiry    | General Inquiry    | PASS   |
+| TC13      | Urgent Escalation  | Urgent Escalation  | PASS   |
+| TC14      | Urgent Escalation  | Urgent Escalation  | PASS   |
+| TC15      | Urgent Escalation  | Urgent Escalation  | PASS   |
+
+## Verified End-to-End Scenario
+
+Customer reported an unfamiliar login and account settings changes.
+
+Result:
+
+* Intent Classification: Urgent Escalation — PASS
+* CARE Response: PASS
+* Self-Verification: PASS
+* Escalation Decision: YES — PASS
+* Priority: CRITICAL — PASS
+* Recommended Team: Security — PASS
+* CRM Summary: PASS
+
+## Failure Case Test
+
+### Scenario
+
+Customer reported a duplicate subscription charge.
+
+The AI-generated response incorrectly stated that the refund would be issued immediately.
+
+### Verification Result
+
+FAIL
+
+### Detected Issues
+
+* Unsupported refund promise.
+* The AI did not have authority to guarantee a refund.
+* The duplicate charge had not been independently confirmed.
+
+### Required Correction
+
+The response must state that the billing issue requires review by the appropriate billing team and must not guarantee a refund or compensation.
+
+### Verification Outcome
+
+The self-verification module correctly identified the unsupported claim and required correction.
+
+## Security Escalation Test
+
+### Scenario
+
+Customer reported unauthorized account access and unrecognized account settings changes.
+
+### Result
+
+* Escalation Required: YES
+* Priority: CRITICAL
+* Recommended Team: Security
+* Resolution Status: Pending human investigation
+
+The system correctly avoided claiming that the account compromise had already been verified or resolved.
+
